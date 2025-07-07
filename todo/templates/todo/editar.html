@@ -1,0 +1,15 @@
+{% extends "todo/layout.html" %}
+{% block content %}
+<div class="container text-center">
+
+    <form method="post">
+        <div class="form-group">
+            {% csrf_token %}
+            {{form}}
+            <button class="btn btn-primary"> Editar Tarea </button>
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}
